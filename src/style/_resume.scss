@@ -1,9 +1,6 @@
 .resume {
-    @include flex-center(column);
-    background-color: $white;
-    margin: 80px 50px 30px 50px;
-    padding: $default-padding-y $default-padding-x;
-    h2 {
-        color: $primary-color;
-    }
+  @include flex-center(column);
+  background-color: $white;
+  margin: 80px 50px 30px 50px;
+  padding: $default-padding-y $default-padding-x;
 }

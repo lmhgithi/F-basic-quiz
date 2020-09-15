@@ -1,6 +1,12 @@
 @mixin flex-center($direction) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bold-and-size-me($size) {
+  margin: 10px;
+  font-size: $size;
+  font-weight: bold;
 }
