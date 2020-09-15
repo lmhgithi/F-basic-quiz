@@ -1,13 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Resume</title>
-</head>
-<body>
-  <script src="src/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <title>Resume</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <p class="resume-hello">HELLO,</p>
+      <p class="resume-description">
+        MY NAME IS KAMIL 24YO AND THIS IS MY RESUME/CV
+      </p>
+    </header>
+    <main class="main-content">
+      <section className="about">
+        <h2>About Me</h2>
+        <p className="about-content"></p>
+      </section>
+      <section className="edcation">
+        <h2>Education</h2>
+        <ul className="education-experience">
+          <!-- <li>
+          <span className="education-year"></span>
+          <div className="education">
+            <span className="education-title"></span>
+            <p className="education-content"></p>
+          </div>
+        </li> -->
+        </ul>
+      </section>
+    </main>
+
+    <script src="src/app.js"></script>
+  </body>
 </html>
