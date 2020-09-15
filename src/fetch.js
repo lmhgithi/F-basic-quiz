@@ -7,39 +7,35 @@ const getUserInfo = async (id) => {
       "content-type": "application/json",
     },
   })
-    .then(response => {
+    .then((response) => {
       if (response.ok) {
         return Promise.resolve(response.json());
-      } else {
-        return Promise.reject("getUserInfo request failed");
       }
+      return Promise.reject(new Error("getUserInfo request failed"));
     })
-    .then(data => {
-      return data
+    .then((data) => {
+      return data;
     })
     .catch((err) => console.log(err));
 };
 
-
 const getUserEducations = async (userId) => {
-    return fetch(`${URL}/${userId}/educations`, {
-        method: "GET",
-        headers: {
-          "content-type": "application/json",
-        },
-      })
-        .then(response => {
-          if (response.ok) {
-            return Promise.resolve(response.json());
-          } else {
-            return Promise.reject("getUserEducations request failed");
-          }
-        })
-        .then(data => {
-          return data
-        })
-        .catch((err) => console.log(err));
+  return fetch(`${URL}/${userId}/educations`, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        return Promise.resolve(response.json());
+      }
+      return Promise.reject(new Error("getUserEducations request failed"));
+    })
+    .then((data) => {
+      return data;
+    })
+    .catch((err) => console.log(err));
 };
-
 
 export { getUserInfo, getUserEducations };

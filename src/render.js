@@ -11,16 +11,16 @@ const renderUserInfo = async (id) => {
 
 const renderUserEducations = async (userId) => {
   const educations = await getUserEducations(userId);
-  educations.forEach(education => {
+  educations.forEach((education) => {
     $(".education-experience").append(
-        `<li>
+      `<li>
             <span class="education-year">${education.year}</span>
             <div class="education">
                 <span class="education-title">${education.title}</span>
                 <p class="education-content">${education.description}</p>
             </div>
         </li>`
-      )
+    );
   });
 };
 
