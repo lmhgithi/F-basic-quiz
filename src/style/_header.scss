@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $gray;
+    width: 100%;
+}
+
+.header-img {
+    margin-top: -90px;
+    width: $image-size;
+    height: $image-size;
+    border-radius: 50px;
+}
