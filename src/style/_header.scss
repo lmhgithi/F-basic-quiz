@@ -1,14 +1,23 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid $gray;
+    @include flex-center(column);
+    border-bottom: 1px solid $gray-light;
     width: 100%;
+
+    .resume-hello {
+        margin: 5px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .resume-description {
+        margin: 10px;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
 }
 
 .header-img {
-    margin-top: -90px;
+    margin-top: -80px;
     width: $image-size;
     height: $image-size;
     border-radius: 50px;

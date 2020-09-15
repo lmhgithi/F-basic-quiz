@@ -1,4 +1,6 @@
 import "./style/index.scss";
-import {renderUserInfo} from "./render"
+import {renderUserInfo, renderUserEducations} from "./render"
+const id=1;
 
-renderUserInfo(1);
+renderUserInfo(id);
+renderUserEducations(id)
