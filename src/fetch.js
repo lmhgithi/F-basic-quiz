@@ -1,5 +1,6 @@
 const URL = "http://localhost:8080/users";
 
+// TODO feedback: 处理response的逻辑有重复，可以思考一下如何除去重复
 const getUserInfo = async (id) => {
   return fetch(`${URL}/${id}`, {
     method: "GET",

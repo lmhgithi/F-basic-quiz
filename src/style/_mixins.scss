@@ -5,6 +5,7 @@
   align-items: center;
 }
 
+// TODO feedback: 命名虽然很可读，但是通常建议命名除了要可读之外，还要考虑它的功能用途
 @mixin bold-and-size-me($size) {
   margin: 10px;
   font-size: $size;

@@ -3,6 +3,7 @@
   border-bottom: 3px solid $gray-light;
   width: 100%;
 
+  // TODO feedback: 此处其实只需要定义一个class
   .resume-hello {
     @include bold-and-size-me(1.5rem);
   }

@@ -3,6 +3,7 @@ import { getUserEducations, getUserInfo } from "../fetch";
 
 jest.mock("../fetch");
 
+// TODO feedback: 如果只是测方法有被调用的话，意义并不大
 describe("fetch data", () => {
   test("should fetch data when render user info", async () => {
     getUserInfo.mockImplementation(() => {});
